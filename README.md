@@ -16,14 +16,10 @@ Then deploy contract using https://contracts-ui.substrate.io/
 
 ##### 💫 Run integration test
 
-First start your local node. https://github.com/paritytech/substrate-contracts-node. And then:
+First start your local node (https://github.com/paritytech/substrate-contracts-node). And then:
 
 ```sh
 yarn
 yarn compile
 yarn test
 ```
-
-##### 💫 Deployed contracts
-
-TBA
