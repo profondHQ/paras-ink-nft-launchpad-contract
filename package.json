@@ -20,7 +20,7 @@
     "ts-node": "^10.8.0"
   },
   "scripts": {
-    "compile": "typechain-compiler",
+    "compile": "mkdir artifacts; cd contracts/paras_launchpad; cargo +nightly-2023-03-13 contract build --release; cd ../../; cp target/ink/paras_launchpad/paras_launchpad.* artifacts/; mkdir types; typechain-compiler -r --noCompile",
     "compile:release": "typechain-compiler --release",
     "test": "mocha --require ts-node/register --recursive ./tests --extension \".spec.ts\" --exit --timeout 20000",
     "test:single": "mocha --require ts-node/register --extension \".ts\" --exit --timeout 20000"
