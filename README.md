@@ -21,5 +21,6 @@ First start your local node (https://github.com/paritytech/substrate-contracts-n
 ```sh
 yarn
 yarn compile
+yarn compile:release
 yarn test
 ```
